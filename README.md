@@ -1,4 +1,4 @@
 # Picaso
 
-**TODO: Add description**
+This is primarily a space to work on HTML stylings and pages
 
