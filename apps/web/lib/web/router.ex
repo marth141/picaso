@@ -22,6 +22,7 @@ defmodule Web.Router do
 
     get "/", PageController, :index
     get "/canvas", CanvasController, :index
+    live "/canvas_live", CanvasLive.Index, :index
   end
 
   # Other scopes may use custom stacks.
