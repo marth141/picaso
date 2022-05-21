@@ -3,7 +3,15 @@ defmodule Web.CanvasLive.Index do
 
   @impl true
   def mount(_params, _session, socket) do
-    {:ok, socket}
+    {:ok,
+     socket
+     |> assign(:hello, "hello")
+     |> assign(:list_of_maps, [
+       %{"a" => "hello", "b" => "world"},
+       %{"a" => "bob", "b" => "marley"},
+       %{"a" => "lotsa", "b" => "data"},
+       %{"b" => "lessa", "c" => "data"}
+     ])}
   end
 
   @impl true
