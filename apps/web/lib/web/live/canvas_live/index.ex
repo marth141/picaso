@@ -3,7 +3,9 @@ defmodule Web.CanvasLive.Index do
 
   @impl true
   def mount(_params, _session, socket) do
-    {:ok, socket}
+    {:ok,
+     socket
+     |> assign(:hello, "hello")}
   end
 
   @impl true
